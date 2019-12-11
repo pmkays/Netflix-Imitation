@@ -185,6 +185,31 @@ img{
     margin: auto;
 }
 
+.table{
+    width: 100%;
+    margin-top: 2rem; 
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table th{
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+
+.table tr td{
+    color: #999;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.table tr td:first-child{
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background: #222;
+}
 
 
 /*Container*/
@@ -194,6 +219,9 @@ img{
     overflow: hidden;
     padding: 0px 2rem;
 }
+
+/*Footer*/
+
 
 /*text styles*/
 
