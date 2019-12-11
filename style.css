@@ -1,6 +1,7 @@
 /* variable */
 :root{
     --primary-color: #e50914;
+    --dark-color: #141414;
 }
 
 /* applies to everything */
@@ -107,7 +108,89 @@ img{
   margin-bottom: 2rem;
 }
 
-/*Buttons*/
+/*tabs*/
+
+.tabs{
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tabs p{
+    font-size:  1.2rem;
+    padding-top: 0.5rem;
+}
+
+.tabs .container > div{
+    padding: 0.5rem 0; 
+}
+
+.tabs .container > div:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.tab-border{
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+/*Tab contents*/
+
+.tab-content{
+    padding: 3rem 0;
+    background: #000;
+    color: #fff;
+}
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*Container*/
+.container{
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0px 2rem;
+}
+
+/*text styles*/
+
+.text-xl{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-lg{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-dark{
+    color: #999;
+}
+
+
+/*Button utilities*/
 
 .btn{
     display: inline-block;
@@ -143,3 +226,4 @@ img{
     padding:1rem 1.5rem; 
     text-transform: uppercase; 
 }
+
